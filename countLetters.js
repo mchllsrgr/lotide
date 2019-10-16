@@ -18,7 +18,6 @@ const countLetters = function(string) {
       results[letter] = 1;
     }
   }
-  console.log(results);
   return results;
 }
 
