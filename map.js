@@ -11,7 +11,7 @@ const eqArrays = function(arr1, arr2) {
   } else {
     return false;
   }
-}
+};
 
 // take two arrays and console.log appropriate message
 const assertArraysEqual = function(arr1, arr2) {
@@ -21,7 +21,7 @@ const assertArraysEqual = function(arr1, arr2) {
   } else if (arrayCheck === false) {
     console.log(`🛑 Assertion failed: ${arr1} !== ${arr2}`);
   }
-}
+};
 
 const words = ["ground", "control", "to", "major", "tom"];
 const animals = ["giraffe", "cat", "tiger", "monkey", "tarantula"];
@@ -33,7 +33,7 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
 
 
