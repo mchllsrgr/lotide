@@ -36,9 +36,9 @@ const map = function(array, callback) {
 };
 
 
-
+module.exports = map;
 
 // test code
-const results1 = map(words, word => word[0]);
-const results2 = map(animals, animal => animal[0]);
-console.log(assertArraysEqual(results1, results2));
+// const results1 = map(words, word => word[0]);
+// const results2 = map(animals, animal => animal[0]);
+// console.log(assertArraysEqual(results1, results2));
