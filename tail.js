@@ -3,7 +3,8 @@ const assertEqual = require('./assertEqual');
 
 // return all items in array except the first
 const tail = function(array) {
-  return array.slice(1);
+  let newTail = array.slice(1);
+  return newTail;
 };
 
 module.exports = tail;

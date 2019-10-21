@@ -2,6 +2,13 @@ const assertEqual = require('../assertEqual');
 const tail = require('../tail');
 const assert = require('chai').assert;
 
+// test code
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+
+// Test Case: Check the original array
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words); // no need to capture the return value since we are not checking it
+
 describe("#tail", () => {
   it("returns two elements", () => {
     assert.strictEqual(result.length, 2);
@@ -17,9 +24,4 @@ describe("#tail", () => {
   });
 });
 
-// test code
-const result = tail(["Hello", "Lighthouse", "Labs"]);
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
