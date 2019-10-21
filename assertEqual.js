@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+// check if two values are equal
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅ Assertion passed: ${actual} === ${expected}`);
@@ -7,10 +7,4 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-
-assertEqual("identical string", "identical string");
-assertEqual("non-identical", "string");
-assertEqual(1, 2);
+module.exports = assertEqual;
