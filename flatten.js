@@ -1,12 +1,5 @@
 // check if two arrays are equal
-const eqArrays = function(arr1, arr2) {
-  for (var i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-}
+const eqArrays = require('./eqArrays');
 
 // take two arrays and console.log appropriate message
 const assertArraysEqual = function(arr1, arr2) {
@@ -36,5 +29,3 @@ const flatten = function(array) {
 }
 
 module.exports = flatten;
-
-// assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
